@@ -9,9 +9,13 @@ body {
 }
 
 header {
-    background-image: #fff;
+    background-image: url('./background_4.jpg');
+    background-size:contain;
+    background-position: center;
+    background-repeat:repeat;
     text-align: center;
     padding: 2rem;
+    color: white;
 }
 
 .profile-pic {
@@ -39,6 +43,10 @@ h2 {
 a {
     color: #007bff;
     text-decoration: none;
+}
+a:hover{
+    text-align: underline;
+    color: #0056b3;
 }
 
 /* Media queries para diseño responsivo */
