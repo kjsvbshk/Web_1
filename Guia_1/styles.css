@@ -76,7 +76,7 @@ header {
     position: relative;
     width: 90%;
     height: 17rem;
-    background-image: linear-gradient(45deg, #0015ff, #317FFF);
+    background-image: linear-gradient(45deg, #0015ff, #00bbff9b);
     border-radius: 0 0 20px 20px;
     
     background-image: url('background_4.jpg');
@@ -171,28 +171,28 @@ header {
     text-align: center;
 }
 
-section {
-    margin-bottom: 2rem;
+.boton-voz {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
 }
 
-h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+.boton-voz i {
+    margin-right: 8px;
 }
 
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-a:hover{
-    text-align: underline;
-    color: #0056b3;
-}
-a:focus, button:focus {
-    outline: 3px solid #007bff;
+.boton-voz:focus {
+    outline: 3px solid #0056b3;
     outline-offset: 2px;
 }
-
 
 /* Media queries para diseño responsivo */
 @media (max-width: 750px) {
