@@ -10,11 +10,11 @@ function readText(text) {
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.rate = 1; 
     utterance.pitch = 1; 
-    utterance.lang = 'en-US'; // Cambia esto para cambiar el idioma
+    utterance.lang = 'en-US'; 
     speechSynthesis.speak(utterance);
 }
 
-// Evento para el botón de voz
+//  botón de voz
 voiceButton.addEventListener('click', () => {
     const bioText = bioSection.textContent;
     const footerText = footerSection.textContent;
@@ -25,18 +25,18 @@ voiceButton.addEventListener('focus',()=>{
     readText(voiceButton.getAttribute('aria-label'))
 });
 
-// Función para anunciar la navegación por teclado
+// anunciar navegación por teclado
 function announceSection(element, sectionName) {
     readText('You are in the ' + sectionName);
 }
 
-// Añadir tabindex para que sean focuseables
+// tabindex focuseables
 bioSection.setAttribute('tabindex', '0');
 footerSection.setAttribute('tabindex', '0');
 profileSection.setAttribute('tabindex', '0');
 avatarSection.setAttribute('tabindex', '0');
 
-// Eventos de enfoque para las secciones
+// Eventos de enfoque
 bioSection.addEventListener('focus', () => announceSection(bioSection, 'User description'));
 footerSection.addEventListener('focus', () => announceSection(footerSection, 'User Bio'));
 profileSection.addEventListener('focus', () => announceSection(profileSection, 'change cover background'));
