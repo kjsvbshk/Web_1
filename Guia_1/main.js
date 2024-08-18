@@ -37,7 +37,7 @@ profileSection.setAttribute('tabindex', '0');
 avatarSection.setAttribute('tabindex', '0');
 
 // Eventos de enfoque para las secciones
-bioSection.addEventListener('focus', () => announceSection(bioSection, 'User description'));
+// bioSection.addEventListener('focus', () => announceSection(bioSection, 'User description'));
 footerSection.addEventListener('focus', () => announceSection(footerSection, 'User Bio'));
 profileSection.addEventListener('focus', () => announceSection(profileSection, 'change cover background'));
 avatarSection.addEventListener('focus', () => announceSection(avatarSection, 'change profile picture'));
