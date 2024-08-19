@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.contenedor::-webkit-scrollbar {
+    -webkit-appearance: none;
+    overflow-x: hidden;
+}
+
+.contenedor::-webkit-scrollbar:vertical {
+    width:4px;
+}
+
+.contenedor::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.contenedor::-webkit-scrollbar:horizontal {
+    height: 1px;
+}
+
+.contenedor::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.contenedor::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
