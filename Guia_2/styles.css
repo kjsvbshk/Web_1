@@ -27,3 +27,57 @@
 .contenedor::-webkit-scrollbar-track {
     border-radius: 10px;  
 }
+
+/* Slider */
+.gallery {
+    width: 100%;
+}
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    height: 400px;
+    margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+}
+
+.gallery-item {
+    /* height: 200px; */
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3 ease-in-out;
+    width: 330px;
+    z-index: 0;
+    border-radius: 15px;
+}
+
+.gallery-item-1 {
+    left: 15%;
+    opacity: .4;
+    transform: translateX(-50%);
+}
+
+.gallery-item-2, .gallery-item-4 {
+    opacity: .8;
+    z-index: 1;
+}
+
+.gallery-item-2 {
+    left: 30%;
+    transform: translateX(-50%);
+}
+
+.gallery-item-3 {
+    box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, 0.35);
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 430px;
+}
+
+.gallery-item-4 {
+    left: 70%;
+    transform: translateX(-50%);
+}

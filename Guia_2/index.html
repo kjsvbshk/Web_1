@@ -49,66 +49,145 @@
     </section>
 
     <!-- About Me -->
-    <section id="features" class="h-screen flex flex-col items-center gap-16">
-        <div class="flex py-2 pl-28 justify-start">
-            <p class="font-primary p-6 w-[50%] bg-white text-black rounded">
+    <section id="features" class="min-h-screen flex flex-col gap-16 p-28">
+        <h2 class="font-primary font-bold text-3xl text-white">Acerca de Mi</h2>
+        <div class="flex justify-start flex-col gap-8 items-center">
+            <p class="font-primary w-[100%]  text-[#86858f]">
                 Soy Ronald Richards, un apasionado diseñador digital con más de 10 años de experiencia en la creación
                 de
                 interfaces intuitivas y marcas impactantes. Mi misión es transformar ideas en experiencias digitales
                 memorables.
             </p>
+
+            <p class="font-primary w-[100%]  text-[#86858f]">
+                En cada proyecto en el que trabajo es una oportunidad para crear algo único, algo que resuene con las
+                personas y que marque la diferencia. Si compartes esta visión y estás buscando un diseñador comprometido
+                con la excelencia, me encantaría que hablemos y exploremos cómo podemos trabajar juntos.
+            </p>
+
+            <img class="rounded max-w-[719px]" src="assets/images/ronald-completo.webp"
+                alt="Roranld richard cuerpo completo">
         </div>
 
-        <div class="flex py-2 pr-28 justify-end">
-            <p class="font-primary p-6 w-[50%] bg-primary text-white rounded">
-                Soy Ronald Richards, un apasionado diseñador digital con más de 10 años de experiencia en la creación
-                de
-                interfaces intuitivas y marcas impactantes. Mi misión es transformar ideas en experiencias digitales
-                memorables.
-            </p>
-        </div>
+        <div class="flex flex-col">
+            <h2 class="font-primary font-bold text-3xl text-white">Mis Habilidades</h2>
 
-        <div class="flex py-2 pl-28 justify-start">
-            <p class="font-primary p-6 w-[50%] bg-secondary text-white rounded">
-                Soy Ronald Richards, un apasionado diseñador digital con más de 10 años de experiencia en la creación
-                de
-                interfaces intuitivas y marcas impactantes. Mi misión es transformar ideas en experiencias digitales
-                memorables.
-            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 py-20 gap-6">
+                <article
+                    class="bg-tertiary rounded-lg p-2 flex flex-col items-center gap-3 hover:scale-110 transition-transform cursor-default">
+                    <img class="w-28" src="assets/images/habilities/adobe.svg" alt="">
+                    <div class="p-2 flex flex-col gap-3">
+                        <h4 class="text-secondary font-primary font-bold">Adobe XD</h4>
+                        <p class="text-[#86858f] max-w-full">Adobe XD para diseñar y prototipar
+                            interfaces de usuario de manera ágil, creando
+                            experiencias interactivas con facilidad.</p>
+                    </div>
+                </article>
+                <article
+                    class="bg-tertiary rounded-lg p-2 flex flex-col items-center gap-3 hover:scale-110 transition-transform cursor-default">
+                    <img class="w-28 mt-2" src="assets/images/habilities/figma.svg" alt="">
+                    <div class="p-2 flex flex-col gap-3">
+                        <h4 class="text-secondary font-primary font-bold">Figma</h4>
+                        <p class="text-[#86858f] max-w-full">Figma para colaborar en tiempo real con otros diseñadores y
+                            clientes, desarrollando interfaces centradas en el usuario de forma colaborativa y
+                            eficiente.</p>
+                    </div>
+                </article>
+                <article
+                    class="bg-tertiary rounded-lg p-2 flex flex-col items-center gap-3 hover:scale-110 transition-transform cursor-default">
+                    <img class="w-28" src="assets/images/habilities/sketch.svg" alt="">
+                    <div class="p-2 flex flex-col gap-3">
+                        <h4 class="text-secondary font-primary font-bold">Sketch</h4>
+                        <p class="text-[#86858f] max-w-full">Sketch para crear diseños vectoriales precisos,
+                            especialmente en la fase inicial de diseño de interfaces y sistemas de diseño.</p>
+
+                    </div>
+                </article>
+                <article
+                    class="bg-tertiary rounded-lg p-2 flex flex-col items-center gap-3 hover:scale-110 transition-transform cursor-default">
+                    <img class="w-28 mt-3" src="assets/images/habilities/invision.svg" alt="">
+                    <div class="p-2 flex flex-col gap-3">
+                        <h4 class="text-secondary font-primary font-bold">InVision</h4>
+                        <p class="text-[#86858f] max-w-full">InVision para compartir prototipos interactivos
+                            con clientes y equipos, permitiendo recoger feedback y realizar pruebas de usabilidad.</p>
+                    </div>
+                </article>
+            </div>
         </div>
     </section>
 
     <!-- slider -->
-    <!-- <section class="relative bg-indigo-lightest-10">
-        <div id="slider-1">
-            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
-                <h2 class="white fs-l3 fw-900">Lorem ipsum dolor sit amet, consectetur</h2>
-                <p class="indigo-lightest fw-600 fs-m1 opacity-30 my-5">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor </p>
-                <a href="#" class="button-md bg-indigo white fs-s3 br-4 black fw-600 no-underline m-5">BUY NOW</a>
+    <section class="flex bg-[#18181a]">
+        <div class="gallery">
+            <div class="gallery-container">
+                <div class="gallery-item gallery-item-1 bg-white">
+                    <h3>
+                        Diseño centrado en el usuario de estudio Skyscanner
+                    </h3>
+                    <p>
+                        El diseño visual de esta interfaz tiene como
+                        objetivo inspirar a los usuarios a planificar su proximo viaje, a traves de una cuidadosa
+                        seleccion
+                        de colores, tipografia e imagenes, se creo una atmosfera que evoca la emocion de explorar nuevos
+                        destinos.
+                    </p>
+                </div>
+
+                <div class="gallery-item gallery-item-2 bg-secondary">
+                    <h3>
+                        Diseño centrado en el usuario de estudio Skyscanner
+                    </h3>
+                    <p>
+                        El diseño visual de esta interfaz tiene como
+                        objetivo inspirar a los usuarios a planificar su proximo viaje, a traves de una cuidadosa
+                        seleccion
+                        de colores, tipografia e imagenes, se creo una atmosfera que evoca la emocion de explorar nuevos
+                        destinos.
+                    </p>
+                </div>
+
+                <div class="gallery-item gallery-item-3 bg-primary">
+                    <h3>
+                        Diseño centrado en el usuario de estudio Skyscanner
+                    </h3>
+                    <p>
+                        El diseño visual de esta interfaz tiene como
+                        objetivo inspirar a los usuarios a planificar su proximo viaje, a traves de una cuidadosa
+                        seleccion
+                        de colores, tipografia e imagenes, se creo una atmosfera que evoca la emocion de explorar nuevos
+                        destinos.
+                    </p>
+                </div>
+
+                <div class="gallery-item gallery-item-4 bg-quaternary">
+                    <h3>
+                        Diseño centrado en el usuario de estudio Skyscanner
+                    </h3>
+                    <p>
+                        El diseño visual de esta interfaz tiene como
+                        objetivo inspirar a los usuarios a planificar su proximo viaje, a traves de una cuidadosa
+                        seleccion
+                        de colores, tipografia e imagenes, se creo una atmosfera que evoca la emocion de explorar nuevos
+                        destinos.
+                    </p>
+                </div>
+
+                <div class="gallery-item gallery-item-5 bg-primary">
+                    <h3>
+                        Diseño centrado en el usuario de estudio Skyscanner
+                    </h3>
+                    <p>
+                        El diseño visual de esta interfaz tiene como
+                        objetivo inspirar a los usuarios a planificar su proximo viaje, a traves de una cuidadosa
+                        seleccion
+                        de colores, tipografia e imagenes, se creo una atmosfera que evoca la emocion de explorar nuevos
+                        destinos.
+                    </p>
+                </div>
             </div>
-            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
-                <h2 class="white fs-l3 fw-900">Lorem ipsum dolor sit amet, consectetur</h2>
-                <p class="indigo-lightest fw-600 fs-m1 opacity-30 my-5">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor </p>
-                <a href="#" class="button-md bg-indigo white fs-s3 br-4 black fw-600 no-underline m-5">BUY NOW</a>
-            </div>
-            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
-                <h2 class="white fs-l3 fw-900">Lorem ipsum dolor sit amet, consectetur</h2>
-                <p class="indigo-lightest fw-600 fs-m1 opacity-30 my-5">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor </p>
-                <a href="#" class="button-md bg-indigo white fs-s3 br-4 black fw-600 no-underline m-5">BUY NOW</a>
-            </div>
+            <div class="gallery-controls"></div>
         </div>
-        <ul class="absolute list-none w-100pc flex justify-between top-50pc">
-            <li><button
-                    class="prev ml-10 br-round border-indigo-lightest indigo-lightest  bg-transparent flex justify-center items-center p-2 focus-indigo-lighter outline-none"><i
-                        data-feather="chevron-left"></i></button></li>
-            <li><button
-                    class="next mr-10 br-round border-indigo-lightest indigo-lightest  bg-transparent flex justify-center items-center p-2  focus-indigo-lighter outline-none"><i
-                        data-feather="chevron-right"></i></button></li>
-        </ul>
-    </section> -->
+    </section>
 
     <!-- big text -->
     <!-- <section class="p-10 md-py-10">
@@ -437,19 +516,24 @@
 
             <ul class="flex py-5 gap-5 text-2xl items-center">
                 <li class="flex gap-2">
-                    <a href="https://github.com/Jaime0506" target="_blank" class="fa-brands fa-github cursor-pointer hover:text-quaternary hover:scale-125 transition-transform"></a>
+                    <a href="https://github.com/Jaime0506" target="_blank"
+                        class="fa-brands fa-github cursor-pointer hover:text-quaternary hover:scale-125 transition-transform"></a>
                 </li>
                 <li class="flex gap-2">
-                    <a href="https://www.linkedin.com" target="_blank" class="fa-brands fa-linkedin cursor-pointer hover:text-quaternary hover:scale-125 transition-transform"></a>
+                    <a href="https://www.linkedin.com" target="_blank"
+                        class="fa-brands fa-linkedin cursor-pointer hover:text-quaternary hover:scale-125 transition-transform"></a>
                 </li>
                 <li class="flex gap-2">
-                    <a href="https://dribbble.com/" target="_blank" class="fa-brands fa-square-dribbble cursor-pointer hover:text-quaternary hover:scale-125 transition-transform"></a>
+                    <a href="https://dribbble.com/" target="_blank"
+                        class="fa-brands fa-square-dribbble cursor-pointer hover:text-quaternary hover:scale-125 transition-transform"></a>
                 </li>
             </ul>
         </div>
     </footer>
-    <div class="bg-white flex p-4 items-center justify-center font-primary">© 2024 Ronald Richards. Todos los derechos reservados.</div>
+    <div class="bg-white flex p-4 items-center justify-center font-primary">© 2024 Ronald Richards. Todos los derechos
+        reservados.</div>
 
+    <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script
