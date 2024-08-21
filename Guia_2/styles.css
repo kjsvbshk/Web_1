@@ -329,7 +329,7 @@
 }
 
 .gallery-nav li.gallery-item-selected {
-    background-color: #555;
+    background-color: #000000;
 }
 
 /* Gato */
@@ -370,7 +370,7 @@
     height: 10%;
     width: 5%;
     border-radius: 50%;
-    background: #161616; /* $color-black */
+    background: #000000; /* $color-black */
 }
 
 .ear--left::before,
@@ -396,7 +396,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background: #161616; /* $color-black */
+    background: #000000; /* $color-black */
     border-radius: 50%;
 }
 
@@ -427,7 +427,7 @@
     height: 0;
     width: 100%;
     border-radius: 0 0 50% 50% / 0 0 40% 40%;
-    background: #161616; /* $color-black */
+    background: #000000; /* $color-black */
     animation: blink 4s infinite ease-in;
 }
 
@@ -477,7 +477,7 @@
     top: 25%;
     height: 50%;
     width: 20%;
-    background: #161616; /* $color-black */
+    background: #000000; /* $color-black */
     border-radius: 50%;
     animation: look-around 4s infinite;
 }
