@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+.contenedor {
+    overflow: visible;    
+}
+
+.hidden-p {
+    opacity: 0;
+    position: relative;
+    transform: translateX(200px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.visible-p {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .contenedor::-webkit-scrollbar {
     -webkit-appearance: none;
     overflow-x: hidden;

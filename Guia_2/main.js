@@ -1,4 +1,8 @@
 import { loader } from "./js/loader"
+import { animateElement } from './js/ScrollAnimation'
+
+const $aboutSection = document.getElementById('about')
+const $projectsSection = document.getElementById('projects')
 
 $(document).ready(function () {
     $('.slider-1').slick({
@@ -12,4 +16,10 @@ $(document).ready(function () {
     })
 })
 
-document.addEventListener('load', loader())
+// document.addEventListener('load', loader())
+
+// Animation Scroll
+document.addEventListener('scroll', () => {
+    animateElement($aboutSection)
+    animateElement($projectsSection)
+})

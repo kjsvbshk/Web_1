@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap" />
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
     <script src="https://kit.fontawesome.com/6337730bdf.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="assets/images/logo.ico" type="image/x-icon">
 
     <title>Landing Page</title>
@@ -17,7 +17,8 @@
 
 <body class="bg-black contenedor">
     <!-- Gatico loader -->
-    <div class="cat-container fixed inset-0 z-50 flex items-center justify-center bg-black">
+
+    <!-- <div class="cat-container fixed inset-0 z-50 flex items-center justify-center bg-black">
         <div class="cat">
             <div class="ear ear--left"></div>
             <div class="ear ear--right"></div>
@@ -31,7 +32,7 @@
                 <div class="muzzle"></div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <nav class="w-full bg-black flex p-4 justify-between fixed z-10">
         <div class="flex justify-between">
@@ -64,13 +65,13 @@
         </div>
 
         <!-- Down arrow -->
-        <span class="bg-tertiary rounded-full w-16 h-16 mt-20 flex items-center justify-center cursor-pointer">
+        <span class="bg-tertiary rounded-full w-16 h-16 mt-20 flex items-center justify-center animate-bounce">
             <i class="fa-solid fa-arrow-down text-white"></i>
         </span>
     </section>
 
     <!-- About Me -->
-    <section id="features" class="min-h-screen flex flex-col gap-16 p-28">
+    <section id="about" class="min-h-screen flex flex-col gap-16 p-28 hidden-p">
         <h2 class="font-primary font-bold text-3xl text-white">Acerca de Mi</h2>
         <div class="flex justify-start flex-col gap-8 items-center">
             <p class="font-primary w-[100%]  text-[#86858f]">
@@ -137,83 +138,140 @@
         </div>
     </section>
 
-    <!-- slider -->
-    <section class="flex items-center p-4 py-10 justify-center bg-[#18181a]">
-        <div class="slider-1 bg-red-400 w-full ">
+    <!-- slider - projects -->
+    <section id="projects" class="flex flex-col gap-16 hidden-p">
+        <h2 class="font-primary font-bold text-3xl text-white px-28">Proyectos recientes</h2>
+        <div class="slider-1 w-full ">
+            <!-- 1 -->
             <div class="">
-                <div class="bg-white p-10 flex">
-                    <div>
-                        <h3 class="text-primary font-primary font-bold mb-5">
-                            Diseño centrado en el usuario de estudio Skyscanner
+                <div class="bg-white p-10 flex min-h-[404px]">
+                    <div class=" flex-1 pr-4 ">
+                        <h3 class="text-primary font-primary font-bold mb-5 text-4xl">
+                            <u>Skyscanner</u>
                         </h3>
-                        <p class="w-2/3">
-                            El diseño visual de esta interfaz tiene como
-                            objetivo inspirar a los usuarios a planificar su proximo viaje, a traves de una cuidadosa
-                            seleccion
-                            de colores, tipografia e imagenes, se creo una atmosfera que evoca la emocion de explorar
-                            nuevos
-                            destinos.
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores asperiores, numquam
-                            dignissimos, ex odit omnis molestias corrupti obcaecati laborum natus eum quo ipsa beatae.
-                            Quod nulla reiciendis amet voluptates soluta.
+                        <p class="pr-4">
+                            Skyscanner es una plataforma web diseñada para facilitar la compra de vuelos y tiquetes de
+                            manera rápida y sencilla. Su interfaz amigable permite a los usuarios buscar, comparar y
+                            reservar vuelos al mejor precio, optimizando cada etapa del proceso de compra.
+                            <br>
+                            <br>
+                            Como diseñador UI/UX y experto en branding, mi rol en el desarrollo de Skyscanner fue
+                            fundamental para garantizar que la experiencia del usuario fuera intuitiva y eficiente. Me
+                            encargué de crear un diseño que simplificara la navegación y facilitara la toma de
+                            decisiones, asegurando que los usuarios pudieran encontrar y reservar sus vuelos con
+                            facilidad.
                         </p>
                     </div>
-                    <div class="border border-red-400 flex justify-center items-center">
-                        <img src="assets/images/logo.svg" alt="">
+                    <div class="flex-1 flex justify-center items-center">
+                        <img class="w-full" src="assets/images/projects/1.svg" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="bg-secondary">
-                <h3>
-                    Propuesta de diseño para aplicacion tipo podcast
-                </h3>
-                <p>
-                    A jaime le gusta el pene
-                    objetivo inspirar a los usuarios a planificar su proximo viaje, a traves de una cuidadosa
-                    seleccion
-                    de colores, tipografia e imagenes, se creo una atmosfera que evoca la emocion de explorar nuevos
-                    destinos.
-                </p>
+            <!-- 2 -->
+            <div>
+                <div class="bg-[#D0CDFE] p-10 flex min-h-[404px] ">
+                    <div class=" flex-1">
+                        <h3 class="font-primary font-bold mb-5 text-4xl text-[#484848]">
+                            <u>eCraft</u>
+                        </h3>
+                        <p class="text-[#484848] pr-4">
+                            eCraft es una herramienta diseñada para simplificar y potenciar la creación de interfaces de
+                            usuario, permitiendo a los diseñadores obtener resultados profesionales de manera rápida y
+                            eficiente.
+                            <br>
+                            <br>
+                            Como diseñador UI/UX y experto en branding, jugué un papel clave en el desarrollo de eCraft.
+                            Conceptualicé y diseñé la interfaz, asegurando que fuera accesible y fácil de usar para
+                            todos los niveles de experiencia. Además, trabajé con el equipo de desarrollo para
+                            garantizar una experiencia de usuario fluida y una identidad visual coherente con la marca.
+                        </p>
+                    </div>
+                    <div class="flex-1 flex justify-center items-center">
+                        <img class="w-full" src="assets/images/projects/2.svg" alt="">
+                    </div>
+                </div>
             </div>
 
-            <div class="bg-primary">
-                <h3>
-                    ¿Cansado de pasar horas ajustando pixeles y buscando la fuente perfecta?
-                </h3>
-                <p>
-                    Nuestro diseño de eCraft es la solución que estabas buscando. Nuestra herramienta de diseño te
-                    permite crear
-                    interfaces de usuario impresionantes de manera rápida y sencilla.
-                </p>
+            <!-- 3 -->
+            <div>
+                <div class="bg-[#7C7AF9] p-10 flex min-h-[404px]">
+                    <div class=" flex-1 p-4">
+                        <h3 class="font-primary font-bold mb-5 text-4xl text-[#000000]">
+                            Identidad visual <u>"Akaio"</u>
+                        </h3>
+                        <p class="text-[#000000] pr-4">
+                            Desarrollé la identidad visual de Akaio con un diseño moderno y versátil. Usé colores
+                            vibrantes para transmitir energía positiva, y la forma de "C" en el logo simboliza un
+                            comienzo, un ciclo o una conexión. El eslogan "Come to Akaio, and let's get it done" invita
+                            a unirse a una comunidad dinámica y orientada a resultados, reflejando la esencia de la
+                            marca.
+                        </p>
+                    </div>
+                    <div class="flex-1 flex justify-center items-center">
+                        <img class="w-full" src="assets/images/projects/3.svg" alt="">
+                    </div>
+                </div>
             </div>
 
-            <div class="bg-quaternary">
-                <h3>
-                    Identidad visual "Akaio"
-                </h3>
-                <p>
-                    Realización de un diseño moderno, versatil y memorable. Mediante la combinacion de colores vibrantes
-                    y tipografia elegante, se busca transmitir la esencia de la marca. La forma de "C" representa un
-                    comienzo,
-                    un ciclo o una conexión, combinando con el eslogan "Come to Akaio, and let's get it done", que es
-                    una invitación a unirse a la empresa o comunidad que es dinámica, eficiente y orientada a
-                    resultados.
-                </p>
+            <!-- 4 -->
+            <div>
+                <div class="bg-quaternary p-10 flex min-h-[404px]">
+                    <div class=" flex-1 p-4">
+                        <h3 class="font-primary font-bold mb-5 text-4xl text-[#000000]">
+                            <u>Diseño UI sobre interfaz de criptomonedas:</u>
+                        </h3>
+                        <p class="text-[#000000]">
+                            Diseñé una interfaz de criptomonedas que presenta la información de manera clara y
+                            accesible, utilizando gráficos y tablas intuitivas. El diseño destaca por su jerarquía
+                            visual y atención a los detalles, ofreciendo una experiencia de usuario fluida y agradable.
+                            Combina una estética moderna con funcionalidad práctica, permitiendo personalización y fácil
+                            acceso a la información relevante.
+                        </p>
+                    </div>
+                    <div class="flex-1 flex justify-center items-center">
+                        <img class="w-full" src="assets/images/projects/4.svg" alt="">
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div class="bg-primary">
-                <h3>
-                    Diseño UI sobre interfaz de criptomonedas
-                </h3>
-                <p>
-                    En el diseño se representa la información de manera clara y concisa, mediante el uso de gráficos
-                    y tablas faciles de entender. Los diseños visuales, funcionalidad y personalización relevante
-                    permiten
-                    una grata experiencia de usuario, a demás de contar con una excelente jerarquía visual y detalles de
-                    la información.
-                </p>
-            </div>
+    <!-- form - contact -->
+    <section class="flex flex-col gap-28 p-28">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contactame
+            </h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">"¡Conectemos y
+                transformemos tus ideas en experiencias visuales impactantes! Estoy aquí para ayudarte con tu próximo
+                proyecto de diseño UI/UX y branding. ¡Hablemos!"
+            </p>
+            <form action="#" class="space-y-8">
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Tu
+                        correo</label>
+                    <input type="email" id="email"
+                        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                        placeholder="ejemplo@gmai.com" required>
+                </div>
+                <div>
+                    <label for="subject"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Asunto</label>
+                    <input type="text" id="subject"
+                        class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                        placeholder="Háganos saber cómo podemos ayudarle" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Mensaje</label>
+                    <textarea id="message" rows="6"
+                        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        placeholder="Explicanos mas detalladamente como podemos ayudarte"></textarea>
+                </div>
+                <button type="submit"
+                    class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 animate-bounce transition-all ease-in-out">Send
+                    message</button>
+            </form>
         </div>
     </section>
 
@@ -270,7 +328,6 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script
         src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-
 
 </body>
 
