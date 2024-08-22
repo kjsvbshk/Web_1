@@ -1,3 +1,5 @@
+import { loader } from "./js/loader"
+
 $(document).ready(function () {
     $('.slider-1').slick({
         infinite: true,
@@ -9,3 +11,5 @@ $(document).ready(function () {
         autoplaySpeed: 2000,
     })
 })
+
+document.addEventListener('load', loader())
