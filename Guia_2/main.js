@@ -15,7 +15,7 @@ $(document).ready(function () {
     })
 })
 
-// document.addEventListener('load', loader())
+document.addEventListener('load', loader())
 
 // Animation Scroll
 document.addEventListener('scroll', () => {

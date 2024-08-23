@@ -263,36 +263,3 @@ html {
     transform: translateX(-50%);
     border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
 }
-
-/* Rating */
-.ratingContainer {
-  display: inline-flex;
-}
-
-.ratingIcon {
-  pointer-events: none;
-  color: orange;
-}
-
-.ratingInput {
-  position: absolute !important;
-  left: -9999px !important;
-}
-
-.ratingLabel {
-  cursor: pointer;
-  padding: 0 0.1em;
-  font-size: 2rem;
-}
-
-.ratingInput:checked ~ .ratingLabel .ratingIcon {
-  color: #ddd;
-}
-
-.ratingInput:hover ~ .ratingLabel .ratingIcon {
-  color: #ddd;
-}
-
-.ratingContainer:hover .ratingInput.none:not(:hover) + .ratingLabel .ratingIcon.none {
-  color: #eee;
-}
