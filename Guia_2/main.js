@@ -11,7 +11,6 @@ $(document).ready(function () {
         nextArrow: $('.next'),
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
         autoplaySpeed: 2000,
     })
 })
@@ -20,6 +19,15 @@ $(document).ready(function () {
 
 // Animation Scroll
 document.addEventListener('scroll', () => {
-    animateElement($aboutSection)
-    animateElement($projectsSection)
+
+    if (screen.width > 1024) {
+        animateElement($aboutSection)
+        animateElement($projectsSection)
+    }
+})
+
+document.getElementById('button-bars').addEventListener('click', () => {
+    console.log("TOGLE")
+    document.getElementById('nav-items').classList.toggle('hidden')
+    document.getElementById('nav-items').classList.toggle('flex')
 })

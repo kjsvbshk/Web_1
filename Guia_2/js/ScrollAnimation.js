@@ -1,5 +1,6 @@
 export const animateElement = (element = HTMLElement) => {
-
+    element.classList.add('hidden-p')
+    
     const screenPosition = window.innerHeight;
     const contentPosition = element.getBoundingClientRect().top
 
