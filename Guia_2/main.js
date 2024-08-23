@@ -11,12 +11,12 @@ $(document).ready(function () {
         nextArrow: $('.next'),
         slidesToShow: 1,
         slidesToScroll: 1,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2000,
     })
 })
 
-document.addEventListener('load', loader())
+// document.addEventListener('load', loader())
 
 // Animation Scroll
 document.addEventListener('scroll', () => {

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .contenedor {
-    overflow: visible;    
+    overflow-x: hidden;    
 }
 
 .hidden-p {

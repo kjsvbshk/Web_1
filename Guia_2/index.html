@@ -17,7 +17,7 @@
 
 <body class="bg-black contenedor">
     <!-- loader -->
-
+<!-- 
     <div class="cat-container fixed inset-0 z-50 flex items-center justify-center bg-black">
         <div class="cat">
             <div class="ear ear--left"></div>
@@ -32,7 +32,7 @@
                 <div class="muzzle"></div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <nav class="w-full bg-black flex p-4 justify-between fixed z-10">
         <div class="flex justify-between">
@@ -45,11 +45,11 @@
             </a>
         </div>
         <div id="nav-items" class="flex flex-column items-center p-2 px-4 gap-1 text-white">
-            <a href="" class="hover:bg-primary rounded p-2 px-6 transition duration-200 bg-black ease-in">Inicio</a>
-            <a href="" class="hover:bg-primary rounded p-2 px-6 transition duration-200 bg-black ease-in">Acerca de
+            <a href="#home" class="hover:bg-primary rounded p-2 px-6 transition duration-200 bg-black ease-in">Inicio</a>
+            <a href="#about" class="hover:bg-primary rounded p-2 px-6 transition duration-200 bg-black ease-in">Acerca de
                 Mi</a>
-            <a href="" class="hover:bg-primary rounded p-2 px-6 transition duration-200 bg-black ease-in">Proyectos</a>
-            <a href="" class="hover:bg-primary rounded p-2 px-6 transition duration-200 bg-black ease-in">Contacto</a>
+            <a href="#projects" class="hover:bg-primary rounded p-2 px-6 transition duration-200 bg-black ease-in">Proyectos</a>
+            <a href="#contact" class="hover:bg-primary rounded p-2 px-6 transition duration-200 bg-black ease-in">Contacto</a>
         </div>
     </nav>
 
@@ -86,8 +86,8 @@
                 con la excelencia, me encantaría que hablemos y exploremos cómo podemos trabajar juntos.
             </p>
 
-            <img class="rounded max-w-[719px]" src="assets/images/ronald-completo.webp"
-                alt="Roranld richard cuerpo completo">
+            <!-- <img class="rounded max-w-[719px]" src="assets/images/ronald-completo.webp"
+                alt="Roranld richard cuerpo completo"> -->
         </div>
 
         <div class="select-none flex flex-col">
@@ -138,7 +138,7 @@
     </section>
 
     <!-- slider - projects -->
-    <section id="projects" class="flex flex-col gap-16 hidden-p">
+    <section id="projects" class="flex flex-col gap-16">
         <h2 class="font-primary font-bold text-3xl text-white px-28">Proyectos recientes</h2>
         <div class="slider-1 w-full ">
             <!-- 1 -->
@@ -237,13 +237,13 @@
     </section>
 
     <!-- Opiniones Usuarios -->
-    <section class="bg-white flex flex-col gap-28 p-28">
+    <section class="flex flex-col gap-28 p-28">
         <div class="flex flex-col">
-            <h2 class="font-primary font-bold text-3xl text-black">Calificaciones del usuario</h2>
+            <h2 class="font-primary font-bold text-3xl text-white">Calificaciones del usuario</h2>
 
-            <div class="select-none grid md:grid-cols-2 lg:grid-cols-4 py-20 gap-6">
+            <div class="select-none grid md:grid-cols-2 lg:grid-cols-4 py-16 gap-6">
                 <article
-                    class="bg-white max-w-sm  rounded overflow-hidden shadow-lg mx-auto my-8 flex flex-col items-center gap-3 transform hover:scale-105 hover:bg-gray-100 transition-transform duration-300">
+                    class="bg-white max-w-sm  rounded overflow-hidden shadow-lg mx-auto my-8 flex flex-col items-center gap-3 transform hover:scale-105 hover:bg-gray-100 transition-transform duration-300 border hover:border-[#5a4fcf]">
                     <img class="w-full" src="assets/images/Users/1.svg" alt="Sunset in the mountains">
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">Vandiere</div>
@@ -260,7 +260,7 @@
                     </div>
                 </article>
                 <article
-                    class="bg-white max-w-sm  rounded overflow-hidden shadow-lg mx-auto my-8 flex flex-col items-center gap-3 transform hover:scale-105 hover:bg-gray-100 transition-transform duration-300">
+                    class="bg-white max-w-sm  rounded overflow-hidden shadow-lg mx-auto my-8 flex flex-col items-center gap-3 transform hover:scale-105 hover:bg-gray-100 transition-transform duration-300 border hover:border-[#5a4fcf]">
 
                     <img class="w-full" src="assets/images/Users/2.svg" alt="Sunset in the mountains">
                     <div class="px-6 py-4">
@@ -277,7 +277,7 @@
                     </div>
                 </article>
                 <article
-                    class="bg-white max-w-sm  rounded overflow-hidden shadow-lg mx-auto my-8 flex flex-col items-center gap-3 transform hover:scale-105 hover:bg-gray-100 transition-transform duration-300">
+                    class="bg-white max-w-sm  rounded overflow-hidden shadow-lg mx-auto my-8 flex flex-col items-center gap-3 transform hover:scale-105 hover:bg-gray-100 transition-transform duration-300 border hover:border-[#5a4fcf]">
                     <img class="w-full" src="assets/images/Users/3.svg" alt="Sunset in the mountains">
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">Quantum</div>
@@ -294,7 +294,7 @@
                     </div>
                 </article>
                 <article
-                    class="bg-white max-w-sm  rounded overflow-hidden shadow-lg mx-auto my-8 flex flex-col items-center gap-3 transform hover:scale-105 hover:bg-gray-100 transition-transform duration-300">
+                    class="bg-white max-w-sm  rounded overflow-hidden shadow-lg mx-auto my-8 flex flex-col items-center gap-3 transform hover:scale-105 hover:bg-gray-100 transition-transform duration-300 border hover:border-[#5a4fcf]">
                     <img class="w-full" src="assets/images/Users/4.svg" alt="Sunset in the mountains">
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">Ariova</div>
@@ -314,7 +314,7 @@
     </section>
 
     <!-- form - contact -->
-    <section class="flex flex-col gap-28 p-28">
+    <section id="contact" class="flex flex-col gap-28 p-28">
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contácteme
             </h2>
