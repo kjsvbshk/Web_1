@@ -36,7 +36,7 @@
 
     <nav class="w-full bg-black flex md:p-4 justify-between fixed z-10">
         <div class="flex justify-between">
-            <a href="" class="flex items-center p-2 pl-4 mr-4 no-underline">
+            <a href="#home" class="flex items-center p-2 pl-4 mr-4 no-underline">
                 <img class="md:w-14 w-12" src="assets/images/logo.svg" />
             </a>
             <a data-toggle="toggle-nav" data-target="#nav-items" href="#"
@@ -51,9 +51,8 @@
 
         <!-- Desk -->
         <div class="hidden md:flex md:flex-column md:items-center md:p-2 px-4 gap-1 text-white">
-            <a href="#home"
-                class="hover:bg-primary md:rounded md:p-2 md:px-6 md:transition md:duration-200 bg-black ease-in">Inicio</a>
-            <a href="#about" class="hover:bg-primary md:rounded md:p-2 md:px-6 md:transition duration-200 bg-black ease-in">Acerca
+            <a href="#about"
+                class="hover:bg-primary md:rounded md:p-2 md:px-6 md:transition duration-200 bg-black ease-in">Acerca
                 de
                 Mi</a>
             <a href="#projects"
@@ -64,8 +63,8 @@
     </nav>
 
     <!-- Movile -->
-    <div id="nav-items" class="text-white
-                hidden absolute w-full top-[78px] justify-center gap-4
+    <div id="nav-items" class="text-white bg-black pb-2
+                hidden w-full top-[78px] justify-center gap-4 fixed z-10
             ">
 
         <a href="#about" class="hover:bg-primary rounded p-2 transition duration-200 bg-black ease-in">Acerca
@@ -82,7 +81,8 @@
         </div>
 
         <div class="text-white flex flex-col gap-3 text-center items-center">
-            <h1 class="bg-primary rounded-full py-1 px-4 font-primary md:text-xl">Ronald Richards - Diseñador Digital</h1>
+            <h1 class="bg-primary rounded-full py-1 px-4 font-primary md:text-xl">Ronald Richards - Diseñador Digital
+            </h1>
             <p class="bg-secondary rounded-full bg-opacity-60 px-3">Especialista en UI/UX y Branding</p>
         </div>
 
@@ -197,11 +197,13 @@
 
     <!-- slider - projects -->
     <section id="projects" class="flex flex-col gap-16">
-        <h2 class="font-primary font-bold text-3xl text-white md:px-28 text-center md:text-start">Proyectos recientes</h2>
+        <h2 class="font-primary font-bold text-3xl text-white md:px-28 text-center md:text-start">Proyectos recientes
+        </h2>
         <div class="slider-1 w-full ">
             <!-- 1 -->
             <div>
-                <div class="bg-[#f9fafb] p-10 grid md:grid-cols-2 md:gap-0 gap-4 grid-cols-1 md:min-h-[404px] md:max-h-[404px] min-h-[769.78px]">
+                <div
+                    class="bg-[#f9fafb] p-10 grid md:grid-cols-2 md:gap-0 gap-4 grid-cols-1 md:min-h-[404px] md:max-h-[404px] min-h-[769.78px]">
                     <div class=" flex-1 pr-4">
                         <h3 class="text-primary font-primary font-bold mb-5 text-4xl">
                             Skyscanner
@@ -227,7 +229,8 @@
 
             <!-- 2 -->
             <div>
-                <div class="bg-[#D0CDFE] p-10 grid md:grid-cols-2 md:gap-0 gap-4 grid-cols-1 md:min-h-[404px] md:max-h-[404px] min-h-[769.78px]">
+                <div
+                    class="bg-[#D0CDFE] p-10 grid md:grid-cols-2 md:gap-0 gap-4 grid-cols-1 md:min-h-[404px] md:max-h-[404px] min-h-[769.78px]">
                     <div class=" flex-1">
                         <h3 class="font-primary font-bold mb-5 text-4xl text-[#484848]">
                             eCraft
@@ -253,7 +256,8 @@
 
             <!-- 3 -->
             <div>
-                <div class="bg-[#7C7AF9] p-10 grid md:grid-cols-2 md:gap-0 gap-4 grid-cols-1 md:min-h-[404px] md:max-h-[404px] min-h-[769.78px]">
+                <div
+                    class="bg-[#7C7AF9] p-10 grid md:grid-cols-2 md:gap-0 gap-4 grid-cols-1 md:min-h-[404px] md:max-h-[404px] min-h-[769.78px]">
                     <div class=" flex-1 p-4">
                         <h3 class="font-primary font-bold mb-5 text-4xl text-[#000000]">
                             Identidad visual "Akaio"
@@ -274,7 +278,8 @@
 
             <!-- 4 -->
             <div>
-                <div class="bg-[#8724f6] p-10 grid md:grid-cols-2 md:gap-0 gap-4 grid-cols-1 md:min-h-[404px] md:max-h-[404px] min-h-[769.78px]">
+                <div
+                    class="bg-[#8724f6] p-10 grid md:grid-cols-2 md:gap-0 gap-4 grid-cols-1 md:min-h-[404px] md:max-h-[404px] min-h-[769.78px]">
                     <div class=" flex-1 p-4">
                         <h3 class="font-primary font-bold mb-5 text-4xl text-[#ffffff]">
                             Diseño UI sobre interfaz de criptomonedas:
@@ -409,15 +414,13 @@
                         placeholder="ejemplo@gmai.com" required>
                 </div>
                 <div>
-                    <label for="subject"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Asunto</label>
+                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-300">Asunto</label>
                     <input type="text" id="subject"
                         class="block p-3 w-full text-sm rounded-lg border shadow-sm focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
                         placeholder="Háganos saber cómo podemos ayudarle" required>
                 </div>
                 <div class="sm:col-span-2">
-                    <label for="message"
-                        class="block mb-2 text-sm font-medium text-gray-400">Mensaje</label>
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-300">Mensaje</label>
                     <textarea id="message" rows="6"
                         class="block p-2.5 w-full text-sm rounded-lg shadow-sm border focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500"
                         placeholder="Explícanos mas detalladamente como podemos ayudarte"></textarea>
@@ -474,16 +477,14 @@
             </ul>
         </div>
     </footer>
-    <div class="bg-white flex p-4 text-center items-center justify-center font-primary">&copy; 2024 Ronald Richards. Todos los
+    <div class="bg-white flex p-4 text-center items-center justify-center font-primary">&copy; 2024 Ronald Richards.
+        Todos los
         derechos
         reservados.</div>
 
     <script type="module" src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script
-        src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-
 </body>
 
 </html>
